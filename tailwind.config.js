@@ -7,11 +7,23 @@ export default {
         theme: "#1CA3A3",
         btn: "#29FFFF",
         service: "#14C3C3",
-        footer: "#9FD2D5"
+        footer: "#9FD2D5",
       },
-      
+
       backgroundImage: {
-        "computer": "url('/ComputerScreen.png')",
+        computer: "url('/ComputerScreen.png')",
+      },
+
+      screens: {
+        xs: "344px",
+        sm: "376px",
+        md: "412px",
+        lg: "540px",
+        xl: "648px",
+        "2xl": "768px",
+        "3xl": "1024px",
+        "4xl": "1240px",
+        "5xl": "1475px",
       },
     },
   },
