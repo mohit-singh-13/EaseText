@@ -20,25 +20,25 @@ const Form = () => {
   }
 
   return (
-    <div className="bg-[#36B8B880] rounded-[2.8rem] w-[75%] h-[75%] flex flex-col px-[2.5rem] py-[2.5rem] gap-6 libre-caslon-text-regular">
-      <div className="flex">
-        <p className="text-[2rem] w-[30%]">Name</p>
-        <input required type="text" name="name" value={formData.name} onChange={changeHandler} className="bg-[#099C8A] rounded-[4.4rem] w-[70%] px-[1rem] text-white border" />
+    <div className="bg-[#36B8B880] rounded-[2.8rem] md:w-[75%] w-[95%] h-[75% h-[85%] flex flex-col px-[2.5rem] py-[2.5rem] gap-6 libre-caslon-text-regular">
+      <div className="flex flex-col 2xl:flex-row">
+        <p className="text-[2rem] 2xl:w-[30%] w-full">Name</p>
+        <input required type="text" name="name" value={formData.name} onChange={changeHandler} className="bg-[#099C8A] rounded-[4.4rem] 2xl:w-[70%] w-full px-[1rem] h-[3rem] text-white border" />
       </div>
 
-      <div className="flex">
-        <p className="text-[2rem] w-[30%]">Phone</p>
-        <input type="number" name="number" value={formData.number} onChange={changeHandler} className="bg-[#099C8A] rounded-[4.4rem] w-[70%] px-[1rem] text-white border" />
+      <div className="flex flex-col 2xl:flex-row">
+        <p className="text-[2rem] 2xl:w-[30%] w-full">Phone</p>
+        <input type="number" name="number" value={formData.number} onChange={changeHandler} className="bg-[#099C8A] rounded-[4.4rem] 2xl:w-[70%] w-full px-[1rem] h-[3rem] text-white border" />
       </div>
 
-      <div className="flex">
-        <p className="text-[2rem] w-[30%]">E-Mail</p>
-        <input required type="email" name="email" value={formData.email} onChange={changeHandler} className="bg-[#099C8A] rounded-[4.4rem] w-[70%] px-[1rem] text-white border" />
+      <div className="flex flex-col 2xl:flex-row">
+        <p className="text-[2rem] 2xl:w-[30%] w-full">E-Mail</p>
+        <input required type="email" name="email" value={formData.email} onChange={changeHandler} className="bg-[#099C8A] rounded-[4.4rem] 2xl:w-[70%] w-full px-[1rem] h-[3rem] text-white border" />
       </div>
 
-      <div className="flex h-full">
-        <p className="text-[2rem] w-[30%]">Message</p>
-        <textarea required name="message" id="message" value={formData.message} onChange={changeHandler} className="bg-[#099C8A] rounded-[3rem] resize-none w-[70%] text-white px-[1rem] py-[0.5rem] border"></textarea>
+      <div className="flex h-full flex-col 2xl:flex-row">
+        <p className="text-[2rem] 2xl:w-[30%] w-full">Message</p>
+        <textarea required name="message" id="message" value={formData.message} onChange={changeHandler} className="bg-[#099C8A] rounded-[3rem] resize-none 2xl:w-[70%] w-full h-[8rem] text-white px-[1.5rem] py-[0.8rem] border"></textarea>
       </div>
 
       <button className="bg-[#3b5855] rounded-[4.4rem] self-end mr-[1rem] px-[2.2rem] py-[0.8rem] text-white font-bold uppercase tracking-widest">Send</button>

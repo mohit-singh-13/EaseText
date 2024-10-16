@@ -5,13 +5,13 @@ const HeroSection = () => {
 
       <div className="relative w-[90%] mx-auto pt-[2rem] h-full flex">
         <div className="flex justify-between items-center z-50 relative h-[85%] w-full 4xl:flex-row flex-col gap-5">
-          <textarea name="input" id="input" placeholder="Type Here..." className="text-[1.3rem] w-[90%] xl:w-[36rem] h-[30rem] rounded-[3.4rem] p-[2rem] bg-white resize-non font-[Inter]">
+          <textarea name="input" id="input" placeholder="Type Here..." className="text-[1.3rem] w-[90%] xl:w-[36rem] h-[30rem] rounded-[3.4rem] p-[2rem] bg-white resize-none font-[Inter]">
           </textarea>
 
-          <textarea name="output" id="output" placeholder="Result..." readOnly className="text-[1.3rem] w-[90%] xl:w-[36rem] h-[30rem] rounded-[3.4rem] p-[2rem] resize-non font-[Inter]">
+          <textarea name="output" id="output" placeholder="Result..." readOnly className="text-[1.3rem] w-[90%] xl:w-[36rem] h-[30rem] rounded-[3.4rem] p-[2rem] resize-none font-[Inter]">
           </textarea>
 
-          <button className="absolute left-[50%] translate-x-[-5rem] bottom-[-4rem] 4xl:bottom-[0%] 5xl:top-[50%] 5xl:bottom-[43%] py-[0.5rem] rounded-[4.4rem] w-[10rem] text-white font-[Inter] border-[2px] border-white cursor-pointer hover:bg-btn hover:text-black hover:font-bold transition-all duration-200">Simplify</button>
+          <button className="absolute left-[50%] translate-x-[-5rem] bottom-[-4rem] 4xl:bottom-[-7%] 5xl:top-[50%] 5xl:bottom-[43%] py-[0.5rem] rounded-[4.4rem] w-[10rem] text-white font-[Inter] border-[2px] border-white cursor-pointer hover:bg-btn hover:text-black hover:font-bold transition-all duration-200">Simplify</button>
         </div>
       </div>
     </div>
