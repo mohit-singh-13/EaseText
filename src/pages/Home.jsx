@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 
 const Home = () => {
   return (
-    <div className="w-full">
+    <div className="w-full relative">
       <div className="w-full bg-theme relative">
         <Navbar />
       </div>

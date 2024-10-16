@@ -34,7 +34,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-[100%] h-[15vh] z-[100] relative flex items-center">
+    <div className="w-[100%] h-[15vh] z-[100] relative flex items-center py-[4rem]">
       <div className="w-[90%] flex items-center justify-between mx-auto relative">
         <div className="flex flex-col w-[35%]">
           <h1 className="font-[Limelight] text-[3rem] lg:text-[4rem]">EaseText</h1>
