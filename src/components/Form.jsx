@@ -11,43 +11,36 @@ const Form = () => {
 
   const changeHandler = (event) => {
     const { name, value } = event.target;
-   
+
     setFormData(prev => ({
       ...prev,
       [name]: value
     }))
   }
-  const [submitted, setSubmitted] = useState(false);
-  async function submitHandler(event){
+  // const [submitted, setSubmitted] = useState(false);
+  async function submitHandler(event) {
     event.preventDefault();
-    
-     
-  // if(!isLoggedIn){
-  //   loginVisible();
-  // }
-  
+
     //  Clear form data after submission
     setFormData({
       name: "",
       number: "",
       email: "",
       message: ""
-  });
-  
-  try {
-    // Send form data to Express backend
-    await axios.post('http://localhost:5000/contact', formData);
-    setSubmitted(true);
-    toast.success("Message has been sent");
-  } catch (error) {
-    toast.error("Message has not been sent");
-     }
-}
+    });
 
-
+    try {
+      // Send form data to Express backend
+      await axios.post('http://localhost:5000/contact', formData);
+      // setSubmitted(true);
+      toast.success("Message has been sent");
+    } catch (error) {
+      console.log(error)
+      toast.error("Message has not been sent");
+    }
+  }
 
   return (
-    
     <form onSubmit={submitHandler} className="bg-[#36B8B880] rounded-[2.8rem] xl:w-[75%] w-[95%] h-[75% h-[85%] flex flex-col px-[2.5rem] py-[2.5rem] gap-4 xl:gap-6 libre-caslon-text-regular">
       <div className="flex flex-col 2xl:flex-row">
         <p className="text-[2rem] 2xl:w-[30%] w-full">Name</p>
@@ -71,7 +64,6 @@ const Form = () => {
 
       <button className="bg-[#3b5855] rounded-[4.4rem] self-end mr-[1rem] px-[2.2rem] py-[0.8rem] text-white font-bold uppercase tracking-widest">Send</button>
     </form>
-   
   )
 }
 
