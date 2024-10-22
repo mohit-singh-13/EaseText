@@ -7,7 +7,7 @@ const ContactUs = () => {
         <img src="/ServiceSupport.png" alt="service" className="" />
       </div>
 
-      <div className="4xl:w-[60%] 2xl:w-[80%] w-full flex justify-center items-center flex-col gap-[1rem] py-[3rem]">
+      <div className="4xl:w-[60%] 2xl:w-[80%] w-full flex justify-center items-center flex-col gap-[1rem] py-[3rem]" id="contact">
         <h2 className="text-[3.5rem] libre-caslon-text-regular">Contact Us</h2>
         <Form />
       </div>

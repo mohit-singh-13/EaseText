@@ -115,3 +115,7 @@ body,
     opacity: 0;
   }
 }
+
+#root {
+  scroll-behavior: smooth;
+}

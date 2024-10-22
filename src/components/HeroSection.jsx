@@ -13,7 +13,7 @@ const HeroSection = () => {
 
   const submitHandler = async () => {
     setLoader(true);
-    const res = await axios.post("http://ec2-18-204-197-170.compute-1.amazonaws.com:8080/simplify", {
+    const res = await axios.post("http://ec2-54-243-16-141.compute-1.amazonaws.com:8080/simplify", {
       data: {
         complex_text: { text }
       }
